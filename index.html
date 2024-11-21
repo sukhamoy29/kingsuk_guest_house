@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Sukh Guest House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Background Image -->
+    <div class="h-screen bg-cover bg-center"
+        style="background-image: url(/kingsukhgueshhouseassets/ayodhya.webp);">
+    <!-- Navbar -->
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
+        <div class="flex h-16 items-center justify-between">
+            <div class="md:flex md:items-center md:gap-12 mt-8">
+                <a class="block text-teal-600" href="#">
+                    <span class="sr-only">Home</span>
+                    <a href="#">
+                        <div class="text-white text-xl font-bold">Kingsukh <br> Guest House</div>
+                    </a>
+                </a>
+            </div>
+    
+            <div class="hidden md:block mt-8" >
+                <nav aria-label="Global">
+                    <ul class="flex items-center gap-6 text-lg">
+                        <li>
+                            <a class="text-white transition hover:text-gray-500/75" href="#"> Home </a>
+                        </li>
+    
+                        <li>
+                            <a class="text-white transition hover:text-gray-500/75" href="#"> About </a>
+                        </li>
+    
+                        <li>
+                            <a class="text-white transition hover:text-gray-500/75" href="#"> Services </a>
+                        </li>
+    
+                        <li>
+                            <a class="text-white transition hover:text-gray-500/75" href="#"> Rooms </a>
+                        </li>
+    
+                        <li>
+                            <a class="text-white transition hover:text-gray-500/75" href="#"> Gallary </a>
+                        </li>
+    
+                        <li>
+                            <a class="text-white transition hover:text-gray-500/75" href="#"> Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="flex items-center gap-4 mt-8">
+                <button class="bg-pink-500 hover:bg-pink-600 text-white font-extrabold py-2 px-6 rounded font-mono ">
+                    Button
+                </button>
+                <div class="block md:hidden">
+                    <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-pink-700 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <div class="text-white text-lg font-bold">Kingsukh <br> Guest House</div>
+                    </a>
+                    <button type="button" class="-m-2.5 rounded-md p-2.5 text-white">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white ">Home</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white ">About</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white ">Services</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white ">Rooms</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white  ">Gallary</a>
+                            <a href="#"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white  ">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Text Overlay -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+            <p class="text-sm tracking-widest mb-2">Simple - Unique - Friendly</p>
+            <h1 class="text-5xl font-bold leading-tight">Make Yourself At Home<br>In Our <span
+                    class="text-pink-500">Guest
+                    House.</span></h1>
+        </div>
+       
+    </div>
+
+    
+    <!-- card part for button in image bottom -->
+    <div class="container mx-auto px-40 -mt-12">
+        <div class="flex justify-center items-center w-full bg-neutral-100 drop-shadow-2xl rounded-lg p-4 h-24">
+            <!-- Adjusted padding and height -->
+            <button
+                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded font-mono mt-4 mb-4 transition duration-300 ease-in-out">
+                <!-- Adjusted margins -->
+                Book Now
+            </button>
+        </div>
+    </div>
+    
+    <!-- about part -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-16 bg-gray-50">
+        <!-- Image Section -->
+        <div class="flex justify-center">
+            <img src="/kingsukhgueshhouseassets/out.jpg" alt="Kingsukh Guest House"
+                class="w-full h-full max-w-md rounded-lg shadow-lg object-cover object-center">
+        </div>
+        <!-- Text Content Section --> 
+        <div class="flex flex-col justify-center mr-40">
+            <h2 class="text-sm font-semibold uppercase text-gray-900 mb-2">
+                About Us
+                <span class="inline-block h-0.5 w-8 bg-pink-500 ml-2"></span>
+            </h2>
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">
+                The Best Holidays Start Here!
+            </h1>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath
+                Hill,
+                Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating
+                Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden
+                oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt
+                hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay.
+            </p>
+            <div class="flex flex-col mb-6">
+                <p class="text-blue-900 font-bold mb-2">
+                    Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156
+                </p>
+                <p class="text-blue-900 font-bold">
+                    Contact us: +91 9007062180
+                </p>
+            </div>
+            <div>
+                <button
+                    class="bg-pink-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-pink-600 transform transition-transform hover:scale-105">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards part   -->
+    <section class="py-16  ml-40 mr-40">
+        <div class="container mx-auto px-4">
+            <div class="max-w-9xl mx-auto">
+                <!-- Text Content aligned with the left edge of the cards -->
+                <div class="mb-12">
+                    <p class="text-gray-800 font-medium text-lg mb-2">OUR LIVING ROOM</p>
+                    <h2 class="text-3xl md:text-4xl font-bold font-sans text-gray-900 leading-tight">
+                        The Most Memorable Rest <br /> Time Starts Here.
+                    </h2>
+                </div>
+
+                <div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2  pt-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Card 1 -->
+                        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                            <img src="/kingsukhgueshhouseassets/room1.jpg" alt="Cozy Haven Room"
+                                class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Cozy Haven Room</h3>
+                                <p class="text-gray-600 mb-4">Escape to comfort in our Cozy Haven Room, a snug retreat
+                                    designed for intimate relaxation.</p>
+                                <p class="font-medium text-gray-800 mb-4">Starting from Rs. 1000/night</p>
+                                <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="/kingsukhgueshhouseassets/large.jpg" alt="Luxury Suite"
+                                class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Spacious Serenity Suite</h3>
+                                <p class="text-gray-600 mb-4">Indulge in luxury and ample space in our Spacious Serenity
+                                    Suite, where tranquility meets roomy elegance..</p>
+                                <p class="font-medium text-gray-600 mb-4">Starting from Rs. 1500/night</p>
+                                <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- image grid part -->
+    <div class="relative flex flex-col justify-center  bg-cover bg-center">
+        <!-- Left Image -->
+        <div class="w-full">
+            <img src="/kingsukhgueshhouseassets/palash.webp" alt="Left Image" class="w-full h-96 object-cover">
+        </div>
+    
+        <!-- Middle Services Section -->
+        <div
+            class="absolute ml-72 inset-x-96 flex flex-col items-center justify-center max-w-full md:w-2/4 text-center md:text-left max-h-full  px-4 md:px-8 z-10 -mt-14 ">
+            <div class="bg-neutral-100 bg-opacity-95 shadow-lg  p-6 mt-11">
+                <h2 class="text-lg font-semibold uppercase text-black mb-4 section__subheader">
+                    Services
+                </h2>
+                <h1 class="text-5xl font-bold mb-6">Strive Only For The <p>Best.</p>
+                </h1>
+                <div class="space-y-4 font-bold text-lg">
+                    <div class="flex items-center space-x-4">
+                        <span class="bg-blue-100 p-2 rounded-full">
+                            <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">...</svg>
+                        </span>
+                        <span class="text-black font-medium">High Class Security</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="bg-pink-100 p-2 rounded-full">
+                            <svg class="w-6 h-6 text-pink-500" fill="currentColor" viewBox="0 0 24 24">...</svg>
+                        </span>
+                        <span class="text-black font-medium">24 Hours Room Service</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="bg-purple-100 p-2 rounded-full">
+                            <svg class="w-6 h-6 text-purple-500" fill="currentColor" viewBox="0 0 24 24">...</svg>
+                        </span>
+                        <span class="text-black font-medium">Restaurant</span>
+                    </div>
+                    <div class="flex items-center space-x-4 mb-16">
+                        <span class="bg-red-100 p-2 rounded-full">
+                            <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">...</svg>
+                        </span>
+                        <span class="text-black font-medium">Tourist Guide Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card part for button in image buttom -->
+    <div class="container mx-auto px-40 py-12">
+        <div class="flex justify-center items-center w-full bg-neutral-100 shadow-lg rounded-lg p-8">
+            <div class="flex flex-col items-center mx-28">
+                <h2 class="text-4xl font-bold text-black">100+</h2>
+                <p class="text-gray-600 mt-2 text-lg">Bookings Completed</p>
+            </div>
+            <div class="flex flex-col items-center mx-28">
+                <h2 class="text-4xl font-bold text-black">150+</h2>
+                <p class="text-gray-600 mt-2 text-lg">Happy Customers</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- gallary part -->
+    <div class=" mt-7">
+        <h1 class="text-3xl font-bold mb-4 text-center justify-center">Image Gallery</h1>
+        <div
+            class="columns-1 gap-0 lg:gap sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)] lg:[&>img:not(:first-child)] mb-14">
+            <img src="kingsukhgueshhouseassets/out.jpg" alt="" srcset="">
+    
+            <img src="kingsukhgueshhouseassets/ayodhya.webp" alt="">
+            <img src="kingsukhgueshhouseassets/palash.webp" alt="">
+            <img src="kingsukhgueshhouseassets/recep.jpg" alt="">
+            <img src="kingsukhgueshhouseassets/room1.jpg" alt="">
+            <img src="kingsukhgueshhouseassets/mithonDam.webp" alt="">
+            <img src="kingsukhgueshhouseassets/flower.jpg" class="w-full h-64" alt="">
+            <img src="kingsukhgueshhouseassets/small.jpg" alt="">
+            <img src="kingsukhgueshhouseassets/baranti.webp" alt="">
+        </div>
+    </div>
+
+ 
+
+    <!-- contact part -->
+<div class="flex flex-col md:flex-row items-start justify-center space-y-6 md:space-y-0 md:space-x-8 p-8">
+    <!-- Contact Info Card -->
+    <div class="bg-pink-500 text-white rounded-lg p-6 w-full md:w-1/3 shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">Contact Info</h2>
+        <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+                <span class="material-icons">location_on: </span>
+                <p>Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+            </div>
+            <div class="flex items-start space-x-3">
+                <span class="material-icons">email: </span>
+                <p>kkghosh0099@gmail.com</p>
+            </div>
+            <div class="flex items-start space-x-3">
+                <span class="material-icons">phone: </span>
+                <p>+91 9007062180</p>
+            </div>
+        </div>
+        <div class="flex space-x-4 mt-6">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Message Form -->
+    <div class="bg-white rounded-lg p-6 w-full md:w-2/3 shadow-lg">
+        <h2 class="text-2xl font-semibold text-pink-500 mb-4">Send a Message</h2>
+        <form class="space-y-4" id="contact-form">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" id="first-name" placeholder="First Name"
+                    class="border-b border-gray-300 focus:border-pink-500 outline-none pb-2" required>
+                <input type="text" id="last-name" placeholder="Last Name"
+                    class="border-b border-gray-300 focus:border-pink-500 outline-none pb-2" required>
+                <input type="email" id="email" placeholder="Email Address"
+                    class="border-b border-gray-300 focus:border-pink-500 outline-none pb-2" required>
+                <input type="text" id="mobile-number" placeholder="Mobile Number"
+                    class="border-b border-gray-300 focus:border-pink-500 outline-none pb-2" required>
+            </div>
+            <textarea id="message" placeholder="Write your message here..."
+                class="w-full border-b border-gray-300 focus:border-pink-500 outline-none pb-2" required></textarea>
+            <button type="submit" class="bg-pink-500 text-white rounded-full py-2 px-6 mt-4">Send</button>
+        </form>
+        <div id="form-response" class="mt-4"></div>
+    </div>
+</div>
+
+    <!-- map part -->
+    <section class="text-gray-600 body-font relative">
+        <div class="absolute inset-0 bg-gray-300 mb-2  ">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5017351225647!2d86.85721547510981!3d23.586332378782714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1705088034844!5m2!1sen!2sin"
+                style="border: 0cap;"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+
+        </div>
+    </section>
+
+    <!-- footer part -->
+    <div class="flex items-end w-full min-h-full bg-white text-lg">
+        <footer class="w-full text-gray-700 bg-black body-font">
+            <div
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <a href="#">
+                            <div class="text-white text-2xl font-bold">Kingsukh <br> Guest House</div>
+                        </a>
+    
+                        <nav class="mb-7 mt-7 list-none">
+                            <p class="text-gray-400">Discover a world of comfort, luxury, and adventure as you explore our
+                                curated selection of hotels, making every moment
+                                of your getaway truly extraordinary.</p>
+    
+                        </nav>
+                        <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded font-mono mb-8">
+                            Button
+                        </button>
+    
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2 ">
+                        <h2 class="mb-3 text-2xl  font-medium tracking-widest text-gray-100 uppercase title-font">QUICK
+                            LINKS</h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Browse Destinations</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Special Offers & Packages</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Room Types & Amenities</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Customer Reviews & Ratings</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Travel Tips & Guides</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 font-medium tracking-widest text-2xl  text-gray-100 uppercase title-font">OUR
+                            SERVICES
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Concierge Assistance</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Flexible Booking Options</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Airport Transfers</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Wellness & Recreation</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-2xl  font-medium tracking-widest text-gray-100 uppercase title-font">CONTACT US
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">Address: Beside Barshal Water
+                                    Tank, Manpur, Barhanti, West Bengal 723156</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">kkghosh0099@gmail.com</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-400 cursor-pointer hover:text-gray-200">+91 9007062180</a>
+                            </li>
+                        </nav>
+                        <div class="mt-4">
+                            <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                                <!-- Facebook Icon -->
+                                <a class="ml-3 text-gray-300 cursor-pointer hover:text-gray-500 " href="#" target="_blank">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.35C0 23.4.6 24 1.325 24h21.35C23.4 24 24 23.4 24 22.675V1.325C24 .6 23.4 0 22.675 0zM12 2.25c2.68 0 3.25 1.27 3.25 3.25v2.25h-2.25c-1.25 0-1.5.5-1.5 1.5v2.25h3.5l-.5 3.5h-3v8h-3v-8h-3v-3.5h3V7.5c0-3.25 1.25-5.25 5-5.25z">
+                                        </path>
+                                    </svg>
+                                </a>
+    
+                                <!-- YouTube Icon -->
+                                <a class="ml-3 text-gray-300 cursor-pointer hover:text-gray-500" href="#" target="_blank">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23.498 6.186a3.004 3.004 0 00-2.118-2.118C19.5 4 12 4 12 4s-7.5 0-9.38.068A3.004 3.004 0 00.502 6.186C.004 7.25 0 12 0 12s.004 4.75.118 5.814a3.004 3.004 0 002.118 2.118C4.5 20 12 20 12 20s7.5 0 9.38-.068a3.004 3.004 0 002.118-2.118C23.996 16.75 24 12 24 12s-.004-4.75-.502-5.814zM9.545 15.569V8.431l6.454 3.569-6.454 3.569z">
+                                        </path>
+                                    </svg>
+                                </a>
+    
+                                <!-- Instagram Icon -->
+                                <a class="ml-3 text-gray-300 cursor-pointer hover:text-gray-500" href="#" target="_blank">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M7.75 2C4.42 2 2 4.42 2 7.75v8.5C2 19.58 4.42 22 7.75 22h8.5C19.58 22 22 19.58 22 16.25v-8.5C22 4.42 19.58 2 16.25 2h-8.5zM12 15.5A3.5 3.5 0 118.5 12 3.5 3.5 0 0112 15.5zm4.5-7.5h-1a1 1 0 00-1 1v1a1 1 0 001 1h1a1 1 0 001-1v-1a1 1 0 00-1-1z">
+                                        </path>
+                                    </svg>
+                                </a>
+    
+                                <!-- Twitter Icon -->
+                                <a class="ml-3 text-gray-300 cursor-pointer hover:text -gray-500" href="#" target="_blank">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23.953 4.57c-.885.392-1.83.656-2.825.775a4.935 4.935 0 002.163-2.724 9.87 9.87 0 01-3.127 1.195A4.925 4.925 0 0016.616 3c-2.736 0-4.95 2.214-4.95 4.95 0 .388.045.765.127 1.128C7.691 8.094 4.066 6.13 1.64 3.161c-.427.733-.666 1.577-.666 2.475 0 1.71.87 3.213 2.188 4.1a4.903 4.903 0 01-2.24-.616v.062c0 2.384 1.693 4.373 3.946 4.826a4.935 4.935 0 01-2.234.085c.634 1.975 2.475 3.414 4.655 3.454A9.87 9.87 0 010 19.54a13.93 13.93 0 007.548 2.211c9.056 0 14.003-7.496 14.003-13.986 0-.213-.005-.425-.014-.637A10.003 10.003 0 0024 4.59a9.87 9.87 0 01-2.847.775A4.935 4.935 0 0023.953 4.57z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="bg-gray-950">
+                <div class="container px-5 py-4 mx-auto">
+                    <p class="text-sm text-gray-400 capitalize text-center">Copyright © 2024 Kingsukh Guest House. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- js part -->
+    <script>
+        const form = document.getElementById('contact-form');
+        const responseDiv = document.getElementById('form-response');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://example.com/contact', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    responseDiv.innerHTML = 'Message sent successfully!';
+                    form.reset();
+                } else {
+                    responseDiv.innerHTML = 'Error sending message!';
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
+    <style>
+        .material-icons {
+            font-size: 20px;
+            margin-top: 5 px;
+        }
+    </style>
+</body>
+
+</html>
